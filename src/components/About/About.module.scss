@@ -1,0 +1,41 @@
+.about {
+  display: flex;
+  justify-content: space-around;
+  margin: 26px auto;
+
+  div {
+    width: 100%;
+
+    button {
+      border: 2px solid #f85c70;
+      border-radius: 12px;
+      background-color: transparent;
+      color: #f85c70;
+      transition: all 0.2s;
+      margin-top: 16px;
+      padding: 10px 20px;
+
+      &:hover {
+        background-color: #f85c70;
+        color: white;
+      }
+    }
+
+    ul {
+      list-style: none;
+      font-size: 15px;
+      margin-top: 16px;
+
+      li {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 600px) {
+  .about {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

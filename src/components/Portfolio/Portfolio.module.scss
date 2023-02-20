@@ -1,0 +1,46 @@
+.portfolio {
+  h1 span {
+    color: #f85c70;
+  }
+
+  .wrapper {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 26px auto;
+
+    .item {
+      cursor: pointer;
+      position: relative;
+      transition: all 0.2s;
+
+      img {
+        position: unset !important;
+      }
+
+      .drop__content {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(248, 92, 112, 0.8);
+        color: white;
+        opacity: 0;
+        transition: all 0.2s;
+      }
+
+      &:hover {
+        .drop__content {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
